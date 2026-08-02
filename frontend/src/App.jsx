@@ -27,7 +27,7 @@ function App() {
     formData.append('file', image);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/predict', {
+      const response = await fetch('https://alopecia.onrender.com', {
         method: 'POST',
         body: formData,
       });
